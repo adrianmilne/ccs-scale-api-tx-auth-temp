@@ -1,4 +1,4 @@
-package uk.gov.crowncommercial.dsd.api.catalogue.routes;
+package uk.gov.crowncommercial.dsd.api.auth.routes;
 
 import static org.springframework.http.HttpHeaders.ACCESS_CONTROL_ALLOW_ORIGIN;
 import org.apache.camel.LoggingLevel;
@@ -6,19 +6,19 @@ import org.apache.camel.builder.endpoint.EndpointRouteBuilder;
 import org.apache.camel.builder.endpoint.dsl.RestEndpointBuilderFactory.RestBindingMode;
 import org.springframework.stereotype.Component;
 import lombok.RequiredArgsConstructor;
-import uk.gov.crowncommercial.dsd.api.catalogue.model.Token;
+import uk.gov.crowncommercial.dsd.api.auth.model.Token;
 
 /**
  *
  */
 @Component
 @RequiredArgsConstructor
-public class CatalogueServiceRouteBuilder extends EndpointRouteBuilder {
+public class AuthServiceRouteBuilder extends EndpointRouteBuilder {
 
   private static final String JSON_BINDING = RestBindingMode.json.name();
   private static final String PATH_ROOT = "/oauth";
 
-  private static final String ROUTE_ID_GET_TOKEN = "get-products";
+  private static final String ROUTE_ID_GET_TOKEN = "get-token";
   private static final String ROUTE_GET_TOKEN = "direct:" + ROUTE_ID_GET_TOKEN;
   private static final String ROUTE_FINALISE_RESPONSE = "direct:finalise-response";
 

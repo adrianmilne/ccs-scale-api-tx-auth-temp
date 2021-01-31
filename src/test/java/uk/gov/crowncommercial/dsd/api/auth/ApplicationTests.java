@@ -1,4 +1,4 @@
-package uk.gov.crowncommercial.dsd.api.catalogue;
+package uk.gov.crowncommercial.dsd.api.auth;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

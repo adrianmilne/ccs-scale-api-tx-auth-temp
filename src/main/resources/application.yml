@@ -14,7 +14,7 @@ camel:
           
 logging:
   level:
-    uk.gov.crowncommercial.dsd.api.catalogue: DEBUG
+    uk.gov.crowncommercial.dsd.api.auth: DEBUG
     org.apache.camel: INFO
     org.springframework: INFO
     org.apache.tomcat: INFO

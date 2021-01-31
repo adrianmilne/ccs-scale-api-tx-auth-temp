@@ -1,4 +1,4 @@
-package uk.gov.crowncommercial.dsd.api.catalogue.config;
+package uk.gov.crowncommercial.dsd.api.auth.config;
 
 import org.springframework.boot.autoconfigure.jackson.Jackson2ObjectMapperBuilderCustomizer;
 import org.springframework.context.annotation.Bean;
