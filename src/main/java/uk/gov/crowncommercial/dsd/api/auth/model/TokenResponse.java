@@ -1,10 +1,15 @@
 package uk.gov.crowncommercial.dsd.api.auth.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.Value;
 
 @Value
-public class Token {
+@NoArgsConstructor(force = true, access = AccessLevel.PRIVATE)
+@AllArgsConstructor
+public class TokenResponse {
 
   @JsonProperty("access_token")
   String accessToken;
