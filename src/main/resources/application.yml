@@ -27,6 +27,12 @@ server:
       enabled: true
 
 # Spree service creds via environment only
+
+# Route configuration
+api:
+  paths:
+    base: /oauth2
+    get-token: /token
       
 ---
 spring:
